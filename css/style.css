@@ -1,0 +1,170 @@
+* {
+  box-sizing:border-box;
+  margin:0px;
+  padding:0px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../img/carbonFiber.png");
+  background-repeat: repeat;
+  color: #ffffff;
+  height: 100vh;
+}
+#headingContainer {
+  margin-top: 6%;
+  width: 90%;
+  text-align: center;
+}
+.headingOne {
+  opacity: 0.2;
+  font-size: 3rem;
+  font-weight: normal;
+  font-family: Arizonia;
+  text-shadow: 5px 5px 12px purple,
+               0px 0px 14px purple,
+               0px 0px 18px purple;
+}
+@keyframes flicker {
+  0%, 22%, 34%, 72%, 100% {
+    opacity: 1;
+  }
+  1%, 23%, 35%, 73%, 99% {
+    opacity: 0.2;
+  }
+}
+#questionContainer {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2rem;
+  margin-top: 10%;
+}
+div p {
+  width: 100%;
+}
+#questionOne {
+  text-shadow: 0px 0px 12px blue;
+  visibility: hidden;
+}
+#questionTwo {
+  text-shadow: 0px 0px 12px red;
+  visibility: hidden;
+}
+#gifContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
+#imgOne {
+  width: 48%;
+  height: 48%;
+  margin: auto;
+  text-align: center;
+  visibility: hidden;
+}
+#imgOne:hover, #imgOne:active {
+  box-shadow: 0px 0px 14px purple;
+}
+#scoreContainer {
+  margin-top: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+}
+#redScore {
+  opacity: 0.2;
+  color: #ffafaf;
+  text-shadow: 0px 0px 8px red;
+}
+#blueScore {
+  opacity: 0.2;
+  color: #b39aff;
+  text-shadow: 0px 0px 8px blue;
+}
+#btnContainer {
+  margin-top: 4%;
+}
+#startBtn {
+  padding: 0.625rem;
+  font-weight: strong;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #343434;
+  text-shadow: 0px 0px 6px #ffffff,
+               0px 0px 12px purple,
+               0px 0px 18px purple,
+               0px 0px 24px purple;
+  animation: flicker 2s infinite;
+  /*TURN ANIMATION OFF ONCLICK*/
+  opacity: 1;
+  /*MAKE OPACITY 0.22 ONCLICK*/
+  box-shadow: 0px 0px 18px purple;
+}
+#startBtn:hover {
+  color: purple;
+}
+#textOne {
+  padding: 0.625rem;
+  font-weight: strong;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: black;
+  text-shadow: 0px 0px 6px #ffffff,
+               0px 0px 12px blue,
+               0px 0px 18px blue,
+               0px 0px 24px blue;
+}
+#textOne:hover {
+  box-shadow: 0px 0px 12px blue,
+              0px 0px 18px blue;
+}
+#textTwo {
+  padding: 0.625rem;
+  font-weight: strong;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: black;
+  text-shadow: 0px 0px 6px #ffffff,
+               0px 0px 12px red,
+               0px 0px 18px red,
+               0px 0px 24px red;
+}
+#textTwo:hover {
+  box-shadow: 0px 0px 12px red,
+              0px 0px 18px red;
+}
+#btnContainerTwo {
+  margin-top: 4%;
+}
+#restartBtn {
+  visibility: hidden;
+  padding: 0.625rem;
+  font-weight: strong;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #343434;
+  text-shadow: 0px 0px 6px #ffffff,
+               0px 0px 12px purple,
+               0px 0px 18px purple,
+               0px 0px 24px purple;
+  animation: flicker 2s infinite;
+  /*TURN ANIMATION OFF ONCLICK*/
+  opacity: 1;
+  /*MAKE OPACITY 0.22 ONCLICK*/
+  box-shadow: 0px 0px 18px purple;
+}
+#restartBtn:hover {
+  color: purple;
+}
